@@ -1,3 +1,16 @@
+const navActiveBtn = document.querySelector(".page_menuIcon");
+const navBar = document.querySelector(".main_nav");
+
+// navBar active
+navActiveBtn.addEventListener("click", () => {
+    if (navBar.className === "main_nav") {
+        navBar.classList.add("active");
+    } else {
+        navBar.classList.remove("active");
+    }
+});
+
+// chart
 new Chart(document.getElementById("line-chart"), {
     type: "line",
     data: {

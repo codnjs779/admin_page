@@ -73,7 +73,10 @@ color:var(--main-white);
     box-sizing: border-box;
     padding-top:50px;
     padding-left:20px;
- 
+    display:none;
+}
+.main_nav.active{
+    display:block;
 }
 .main_nav_box{
     margin-bottom:50px;
