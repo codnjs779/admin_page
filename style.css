@@ -1,0 +1,121 @@
+@import url(reset.css);
+
+:root {
+    --main-black: black;
+    --main-white: #f7f7f7;
+    --dark-grey: #939393;
+    --light-grey: #c6c6c6;
+    --box-blue: #0C6AF5;
+    --title-size: 25px;
+    --small-size: 13px;
+    --content-size:18px;
+    --box-border: 5px;
+
+}
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background: var(--main-black);
+    width:100%;
+    height:50px;
+    align-items: center;
+}
+.page_header_search,
+.page_header,
+.page_main,
+.main_card,
+.main_card_more,
+.page_header_form {
+    display: flex;
+}
+.page_header{
+    width:15%;
+    justify-content: space-between;
+    margin-left:20px;
+    cursor: pointer;
+}
+.page_title{
+    font-size:var(--title-size);
+}
+.page_header_search{
+    width:85%;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right:20px;
+    font-size:15px;
+}
+.page_header_input,
+.page_header_inputBtn{
+    border-radius:var(--box-border);
+    border:none;
+}
+
+.page_header_input{
+    width:200px;
+    padding:7px;
+}
+.page_header_inputBtn{
+background:var(--box-blue);
+font-size:inherit;
+color:var(--main-white);
+}
+.page_header_user{
+    margin-left:40px;
+}
+.page_header_user i {
+    margin-right:5px;
+}
+
+/* nav */
+.main_nav{
+    box-sizing: border-box;
+    padding-top:50px;
+    padding-left:20px;
+ 
+}
+.main_nav_box{
+    margin-bottom:50px;
+}
+.main_nav_contents{
+    color:var(--light-grey);
+}
+.main_nav_title{
+    color:var(--dark-grey);
+    margin-bottom:30px;
+    font-size:var(--small-size);
+}
+.main_nav_contentsBox{
+    display:flex;
+    margin-bottom:30px;
+    cursor: pointer;
+}
+.main_nav_contentsBox div{
+    margin-left:10px;
+}
+
+
+
+
+.main_dashboard {
+    flex-direction: column;
+}
+.main_card {
+    margin: 50px;
+}
+.main_card_more {
+    justify-content: space-between;
+}
+.main_card_viewMore {
+    text-decoration: underline;
+}
+.main_nav {
+    width: 15%;
+    background:  var(--main-black);
+    color: var(--light-grey);
+}
+}
+.main_dashboardBox {
+    width: 85%;
+}
