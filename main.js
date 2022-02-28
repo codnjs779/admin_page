@@ -1,6 +1,6 @@
 const navActiveBtn = document.querySelector(".page_menuIcon");
 const navBar = document.querySelector(".main_nav");
-
+const tbody = document.querySelector("tbody");
 // navBar active
 navActiveBtn.addEventListener("click", () => {
     if (navBar.className === "main_nav") {
@@ -9,6 +9,35 @@ navActiveBtn.addEventListener("click", () => {
         navBar.classList.remove("active");
     }
 });
+
+// userData
+fetch("https://jsonplaceholder.typicode.com/users")
+    .then((response) => response.json())
+    .then(function (json) {
+        json.forEach((data) => {
+            let { name, email, phone, company, website } = data;
+            let newTr = document.createElement("tr");
+            let nameTd = document.createElement("td");
+            let emailTd = document.createElement("td");
+            let phoneTd = document.createElement("td");
+            let companyId = document.createElement("td");
+            let websiteTd = document.createElement("td");
+
+            nameTd.innerText = name;
+            emailTd.innerText = email;
+            phoneTd.innerText = phone;
+            companyId.innerText = company.name;
+            websiteTd.innerText = website;
+
+            newTr.appendChild(nameTd);
+            newTr.appendChild(emailTd);
+            newTr.appendChild(phoneTd);
+            newTr.appendChild(companyId);
+            newTr.appendChild(websiteTd);
+
+            tbody.appendChild(newTr);
+        });
+    });
 
 // chart
 new Chart(document.getElementById("line-chart"), {

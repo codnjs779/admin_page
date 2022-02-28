@@ -242,6 +242,7 @@ td {
     .page_header_search {
         width: 50%;
     }
+
     .main_card,
     .main_dashboard_chart {
         flex-direction: column;
@@ -265,11 +266,10 @@ td {
         width: 30%;
         padding-right: 10px;
     }
-
-    table {
-        font-size: 13px;
+    .table_scroll {
+        overflow-x: auto;
     }
-    label {
-        font-size: 11px;
+    tbody {
+        font-size: 13px;
     }
 }
