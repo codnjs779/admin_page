@@ -70,64 +70,70 @@
             </nav>
             <div class="main_dashboardBox">
                 <section class="main_dashboard">
-                    <div>Dashboard</div>
-                    <div>page page</div>
-
-                    <ul class="main_card">
-                        <div class="main_card_box">
-                            <li class="main_card_title">Primary Card</li>
-                            <li class="main_card_more">
-                                <div class="main_card_viewMore">View Details</div>
-                                <i class="fa-solid fa-angle-right"></i>
-                            </li>
-                        </div>
-
-                        <div class="main_card_box">
-                            <li class="main_card_title">Warning Card</li>
-                            <li class="main_card_more">
-                                <div class="main_card_viewMore">View Details</div>
-                                <i class="fa-solid fa-angle-right"></i>
-                            </li>
-                        </div>
-
-                        <div class="main_card_box">
-                            <li class="main_card_title">Success Card</li>
-                            <li class="main_card_more">
-                                <div class="main_card_viewMore">View Details</div>
-                                <i class="fa-solid fa-angle-right"></i>
-                            </li>
-                        </div>
-
-                        <div class="main_card_box">
-                            <li class="main_card_title">Danger Card</li>
-                            <li class="main_card_more">
-                                <div class="main_card_viewMore">View Details</div>
-                                <i class="fa-solid fa-angle-right"></i>
-                            </li>
-                        </div>
-                    </ul>
+                    <div class="main_dashboard_title">Dashboard</div>
+                    <div class="main_dashboard_msg">page page</div>
                 </section>
 
-                <section>
-                    <div>
-                        <i class="fa-solid fa-chart-line"></i>
-                        <div>Area Chart Example</div>
-                        <canvas id="line-chart"></canvas>
+                <ul class="main_card">
+                    <div class="main_card_box yellow">
+                        <li class="main_card_title">Primary Card</li>
+                        <li class="main_card_more">
+                            <div class="main_card_viewMore">View Details</div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </li>
                     </div>
 
-                    <div>
-                        <i class="fa-solid fa-chart-column"></i>
-                        <div>Bar Chart Example</div>
-                        <canvas id="bar-chart" width="200" height="130"></canvas>
+                    <div class="main_card_box green">
+                        <li class="main_card_title">Warning Card</li>
+                        <li class="main_card_more">
+                            <div class="main_card_viewMore">View Details</div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </li>
+                    </div>
+
+                    <div class="main_card_box red">
+                        <li class="main_card_title">Success Card</li>
+                        <li class="main_card_more">
+                            <div class="main_card_viewMore">View Details</div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </li>
+                    </div>
+
+                    <div class="main_card_box blue">
+                        <li class="main_card_title">Danger Card</li>
+                        <li class="main_card_more">
+                            <div class="main_card_viewMore">View Details</div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </li>
+                    </div>
+                </ul>
+
+                <section class="main_dashboard_chart">
+                    <div class="main_dashboard_chartBox">
+                        <div class="main_dashboard_chartBoxTitle">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <div>Area Chart Example</div>
+                        </div>
+                        <canvas id="line-chart" width="600" height="300"></canvas>
+                    </div>
+
+                    <div class="main_dashboard_chartBox">
+                        <div class="main_dashboard_chartBoxTitle">
+                            <i class="fa-solid fa-chart-column"></i>
+                            <div>Bar Chart Example</div>
+                        </div>
+                        <canvas id="bar-chart" width="600" height="300"></canvas>
                     </div>
                 </section>
 
-                <section>
-                    <div>
-                        <i class="fa-solid fa-table"></i>
-                        <div>DataTable Example</div>
+                <section class="main_dashboard_table">
+                
+                        <div class="main_dashboard_table_title">
+                            <i class="fa-solid fa-table"></i>
+                            <div>DataTable Example</div>
+                        </div>
 
-                        <div>
+                        <div class="main_dashboard_table_selector">
                             <label>
                                 <select>
                                     <option value="5">5</option>
@@ -138,11 +144,9 @@
                                 </select>
                                 entries per page
                             </label>
-
                             <input placeholder="Search" />
                         </div>
 
-                        <div>
                             <table>
                                 <thead>
                                     <tr>
@@ -208,7 +212,6 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
                     </div>
                 </section>
             </div>

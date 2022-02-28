@@ -41,6 +41,7 @@ new Chart(document.getElementById("bar-chart"), {
     },
     options: {
         legend: { display: false },
+
         title: {
             display: true,
         },
